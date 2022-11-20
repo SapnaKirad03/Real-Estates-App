@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bck"
+    tools:context=".ui.activities.RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/activity_register_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/activity_login_input_text_background"
+        android:hint="email"
+        android:inputType="textShortMessage|textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="@dimen/activity_login_padding_input_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <EditText
+        android:id="@+id/activity_register_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/activity_login_input_text_background"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="@dimen/activity_login_padding_input_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_email_edit_text"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/activity_register_password_hint_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/activity_login_input_text_background"
+        android:hint="@string/password_hint"
+        android:minHeight="48dp"
+        android:padding="@dimen/activity_login_padding_input_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_password_edit_text"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/activity_register_register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/yellow_btn_background"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_password_hint_edit_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

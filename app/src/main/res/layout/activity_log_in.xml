@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.openclassrooms.realestatemanager.ui.activities.LogInActivity"
+    android:background="@drawable/main_bck">
+
+
+    <EditText
+        android:id="@+id/activity_log_in_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/activity_login_input_text_background"
+        android:inputType="textShortMessage|textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="@dimen/activity_login_padding_input_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/activity_log_in_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/activity_login_input_text_background"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="@dimen/activity_login_padding_input_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_log_in_email_edit_text"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/don_t_remember_password_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="8dp"
+        android:text="@string/don_t_remember_password_click_here_to_see_hint"
+        android:textColor="@color/colorCustomBlue"
+        android:background="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_log_in_password_edit_text"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/activity_log_in_register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_login_margin_horizontal_input_text"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/yellow_btn_background"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/don_t_remember_password_text_view"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/activity_log_in_register_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/don_t_have_an_account_register_here"
+        android:textColor="@color/colorCustomBlue"
+        android:background="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_log_in_register_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
